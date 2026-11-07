@@ -1,0 +1,26 @@
+{
+  "name": "llm-mcp-gateway-assessment",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=26.13.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "start:mcp": "node dist/task1/main.js",
+    "start:security": "node dist/task2/main.js",
+    "start:llm": "node dist/task3/main.js",
+    "pretest": "npm run build"
+  },
+  "dependencies": {
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.0",
+    "typescript": "^6.0.0",
+    "vitest": "^4.0.0"
+  }
+}

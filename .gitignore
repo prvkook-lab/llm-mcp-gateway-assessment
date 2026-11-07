@@ -1,0 +1,51 @@
+# Dependencies and generated build/test output
+node_modules/
+dist/
+coverage/
+.nyc_output/
+*.tsbuildinfo
+*.log
+npm-debug.log*
+.cache/
+.tmp/
+tmp/
+
+# Local environment; keep the sanitized setup template
+.env
+.env.*
+!.env.example
+.envrc
+
+# Credentials, private keys, and local tool/cloud settings
+credentials
+credentials.*
+secrets/
+secrets.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+id_rsa*
+id_ed25519*
+.aws/
+.ssh/
+.codex/
+.agents/
+
+# Local database files, sidecars, and dumps
+*.sqlite
+*.sqlite3
+*.db
+*.sqlite-*
+*.sqlite3-*
+*.db-*
+*.sql
+
+# Editor and operating system files
+.DS_Store
+._*
+.idea/
+.vscode/
+*.swp
+*.swo
